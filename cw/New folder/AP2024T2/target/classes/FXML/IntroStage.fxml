@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Main">
+    <center>
+
+        <VBox alignment="CENTER" prefHeight="169.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="5.0" layoutX="170.0" layoutY="107.0"
+                   prefHeight="61.0" prefWidth="275.0" text="Jet Plane" textFill="#ffee00">
+                <font>
+                    <Font name="Snap ITC" size="48.0"/>
+                </font>
+                <effect>
+                    <DropShadow height="23.91" radius="8.5425" spread="0.99" width="12.26"/>
+                </effect>
+                <cursor>
+                    <Cursor fx:constant="TEXT"/>
+                </cursor>
+            </Label>
+            <Label alignment="CENTER" prefHeight="26.0" prefWidth="119.0" text="Narges Kari" textAlignment="CENTER"
+                   textFill="#08f310">
+                <font>
+                    <Font name="Comic Sans MS" size="18.0"/>
+                </font>
+                <effect>
+                    <DropShadow blurType="ONE_PASS_BOX" spread="0.88"/>
+                </effect>
+            </Label>
+            <Label alignment="CENTER" prefHeight="26.0" prefWidth="119.0" text="AP 2024 HW2" textAlignment="CENTER"
+                   textFill="#08f310">
+                <font>
+                    <Font name="Comic Sans MS" size="14.0"/>
+                </font>
+                <effect>
+                    <DropShadow blurType="ONE_PASS_BOX" spread="0.88"/>
+                </effect>
+            </Label>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+
+            <cursor>
+                <Cursor fx:constant="DEFAULT"/>
+            </cursor>
+        </VBox>
+    </center>
+    <background>
+
+    </background>
+
+</BorderPane>

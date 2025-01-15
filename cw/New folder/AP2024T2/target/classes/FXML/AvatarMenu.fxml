@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AvatarController">
+
+    <TabPane layoutX="120.0" layoutY="207.0" prefHeight="250.0" prefWidth="560.0" side="BOTTOM"
+             tabClosingPolicy="UNAVAILABLE">
+        <Tab text="Choose Avatar">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="190.0" prefWidth="309.0">
+
+                <HBox layoutX="39.0" layoutY="33.0" prefHeight="176.0" prefWidth="479.0">
+                    <ImageView fitHeight="150.0" fitWidth="155.0" onMouseClicked="#setAvatar1" pickOnBounds="true"
+                               preserveRatio="true">
+                        <Image url="@../IMAGES/avatar1.png">
+                        </Image>
+                    </ImageView>
+                    <ImageView fitHeight="150.0" fitWidth="150.0" onMouseClicked="#setAvatar2" pickOnBounds="true"
+                               preserveRatio="true">
+                        <Image url="@../IMAGES/avatar2.png">
+                        </Image>
+                    </ImageView>
+                    <ImageView fitHeight="150.0" fitWidth="172.0" onMouseClicked="#setAvatar3" pickOnBounds="true"
+                               preserveRatio="true">
+                        <Image url="@../IMAGES/avatar3.png">
+                        </Image>
+                    </ImageView>
+
+                </HBox>
+
+            </AnchorPane>
+        </Tab>
+        <Tab text="Upload Image" >
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                <HBox prefHeight="217.0" prefWidth="560.0">
+                    <Label prefHeight="217.0" prefWidth="477.0" text="Drag an image here ⬇" textAlignment="CENTER"
+                           fx:id="dragLabel">
+                        <font>
+                            <Font name="Comic Sans MS" size="18.0"/>
+                        </font>
+                    </Label>
+                    <Button fx:id="uploadButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="79.0"
+                            text="UPLOAD">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="12.0"/>
+                        </font>
+                    </Button>
+                </HBox>
+            </AnchorPane>
+        </Tab>
+        <effect>
+            <DropShadow/>
+        </effect>
+    </TabPane>
+    <Label layoutX="20.0" layoutY="36.0" onMouseClicked="#back" prefHeight="25.0" prefWidth="53.0" text="Back"
+           textFill="#00ff26">
+        <font>
+            <Font name="Comic Sans MS" size="18.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="ONE_PASS_BOX" spread="0.88"/>
+        </effect>
+    </Label>
+
+</AnchorPane>

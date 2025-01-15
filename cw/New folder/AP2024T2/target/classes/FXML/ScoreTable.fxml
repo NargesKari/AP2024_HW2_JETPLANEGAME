@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ScoreTableController">
+    <Label layoutX="27.0" layoutY="27.0" onMouseClicked="#back" prefHeight="25.0" prefWidth="53.0" text="Back"
+           textFill="#00ff26">
+        <font>
+            <Font name="Comic Sans MS" size="18.0"/>
+        </font>
+        <effect>
+            <DropShadow blurType="ONE_PASS_BOX" spread="0.88"/>
+        </effect>
+    </Label>
+    <ScrollPane layoutX="46.0" layoutY="68.0" prefHeight="406.0" prefWidth="733.0">
+        <content>
+            <AnchorPane disable="true" minHeight="0.0" minWidth="0.0" prefHeight="629.0" prefWidth="716.0">
+                <children>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2e20f" height="49.0" layoutX="16.0" layoutY="14.0"
+                               stroke="BLACK" strokeType="INSIDE" width="688.0"/>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="49.0" layoutX="25.0" layoutY="73.0"
+                               stroke="BLACK" strokeType="INSIDE" width="670.0"/>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cd7f32" height="49.0" layoutX="34.0"
+                               layoutY="134.0" stroke="BLACK" strokeType="INSIDE" width="652.0"/>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cae8ff" height="49.0" layoutX="43.0"
+                               layoutY="197.0" stroke="BLACK" strokeType="INSIDE" width="634.0"/>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b6c1ee" height="49.0" layoutX="43.0"
+                               layoutY="257.0" stroke="BLACK" strokeType="INSIDE" width="634.0"/>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cae8ff" height="49.0" layoutX="43.0"
+                               layoutY="317.0" stroke="BLACK" strokeType="INSIDE" width="634.0"/>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b6c1ee" height="49.0" layoutX="43.0"
+                               layoutY="377.0" stroke="BLACK" strokeType="INSIDE" width="634.0"/>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cae8ff" height="49.0" layoutX="43.0"
+                               layoutY="437.0" stroke="BLACK" strokeType="INSIDE" width="634.0"/>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b6c1ee" height="49.0" layoutX="43.0"
+                               layoutY="497.0" stroke="BLACK" strokeType="INSIDE" width="634.0"/>
+                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cae8ff" height="49.0" layoutX="43.0"
+                               layoutY="557.0" stroke="BLACK" strokeType="INSIDE" width="634.0"/>
+                    <Label fx:id="username1" layoutX="34.0" layoutY="28.0" prefHeight="21.0" prefWidth="351.0"
+                           text="Username:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="score1" layoutX="396.0" layoutY="28.0" prefHeight="21.0" prefWidth="171.0"
+                           text="Score:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="wave1" layoutX="573.0" layoutY="28.0" prefHeight="21.0" prefWidth="109.0"
+                           text="LastWave:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="username2" layoutX="44.0" layoutY="87.0" prefHeight="21.0" prefWidth="331.0"
+                           text="Username:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="score2" layoutX="385.0" layoutY="87.0" prefHeight="21.0" prefWidth="171.0"
+                           text="Score:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="wave2" layoutX="556.0" layoutY="87.0" prefHeight="21.0" prefWidth="109.0"
+                           text="LastWave:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="username3" layoutX="54.0" layoutY="148.0" prefHeight="21.0" prefWidth="309.0"
+                           text="Username:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="score3" layoutX="375.0" layoutY="148.0" prefHeight="21.0" prefWidth="158.0"
+                           text="Score:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="wave3" layoutX="547.0" layoutY="148.0" prefHeight="21.0" prefWidth="109.0"
+                           text="LastWave:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="username4" layoutX="59.0" layoutY="211.0" prefHeight="21.0" prefWidth="298.0"
+                           text="Username:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="score4" layoutX="363.0" layoutY="211.0" prefHeight="21.0" prefWidth="158.0"
+                           text="Score:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="wave4" layoutX="533.0" layoutY="211.0" prefHeight="21.0" prefWidth="109.0"
+                           text="LastWave:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="username5" layoutX="59.0" layoutY="271.0" prefHeight="21.0" prefWidth="298.0"
+                           text="Username:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="score5" layoutX="363.0" layoutY="271.0" prefHeight="21.0" prefWidth="158.0"
+                           text="Score:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="wave5" layoutX="533.0" layoutY="271.0" prefHeight="21.0" prefWidth="109.0"
+                           text="LastWave:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="username6" layoutX="59.0" layoutY="331.0" prefHeight="21.0" prefWidth="298.0"
+                           text="Username:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="score6" layoutX="363.0" layoutY="331.0" prefHeight="21.0" prefWidth="158.0"
+                           text="Score:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="wave6" layoutX="533.0" layoutY="332.0" prefHeight="21.0" prefWidth="109.0"
+                           text="LastWave:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="username7" layoutX="59.0" layoutY="391.0" prefHeight="21.0" prefWidth="298.0"
+                           text="Username:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="score7" layoutX="363.0" layoutY="391.0" prefHeight="21.0" prefWidth="158.0"
+                           text="Score:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="wave7" layoutX="533.0" layoutY="391.0" prefHeight="21.0" prefWidth="109.0"
+                           text="LastWave:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="username8" layoutX="59.0" layoutY="451.0" prefHeight="21.0" prefWidth="298.0"
+                           text="Username:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="score8" layoutX="363.0" layoutY="451.0" prefHeight="21.0" prefWidth="158.0"
+                           text="Score:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="wave8" layoutX="533.0" layoutY="451.0" prefHeight="21.0" prefWidth="109.0"
+                           text="LastWave:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="username9" layoutX="59.0" layoutY="511.0" prefHeight="21.0" prefWidth="298.0"
+                           text="Username:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="score9" layoutX="363.0" layoutY="511.0" prefHeight="21.0" prefWidth="158.0"
+                           text="Score:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="wave9" layoutX="533.0" layoutY="511.0" prefHeight="21.0" prefWidth="109.0"
+                           text="LastWave:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="username10" layoutX="59.0" layoutY="571.0" prefHeight="21.0" prefWidth="298.0"
+                           text="Username:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="score10" layoutX="363.0" layoutY="571.0" prefHeight="21.0" prefWidth="158.0"
+                           text="Score:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                    <Label fx:id="wave10" layoutX="533.0" layoutY="571.0" prefHeight="21.0" prefWidth="109.0"
+                           text="LastWave:">
+                        <font>
+                            <Font name="Comic Sans MS Bold" size="14.0"/>
+                        </font>
+                        <effect>
+                            <InnerShadow/>
+                        </effect>
+                    </Label>
+                </children>
+            </AnchorPane>
+        </content>
+        <effect>
+            <ColorAdjust contrast="0.17"/>
+        </effect>
+    </ScrollPane>
+    <ComboBox fx:id="comboBox" layoutX="648.0" layoutY="39.0" onAction="#sortType" prefHeight="25.0" prefWidth="131.0">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="sort by kill"/>
+                <String fx:value="sort by difficulty"/>
+                <String fx:value="sort by accuracy"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <Label layoutX="316.0" layoutY="19.0" prefHeight="42.0" prefWidth="168.0" text="Score Table">
+        <font>
+            <Font name="Snap ITC" size="24.0"/>
+        </font>
+    </Label>
+</AnchorPane>
